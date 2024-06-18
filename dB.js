@@ -8,13 +8,13 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 const corsOptions = {
-  origin: 'https://task-management-new-dusky.vercel.app', // Vercel frontend URL
+  origin: 'https://task-management-mh5dp0uuj-lucifer-15s-projects.vercel.app', // Vercel frontend URL
   optionsSuccessStatus: 200,
 };
 
 app.use(cors(corsOptions));
 
-const tasksFilePath = path.join(__dirname, 'tasks.json');
+const tasksFilePath = './tasks.json';
 
 // Ensure tasks.json exists
 if (!fs.existsSync(tasksFilePath)) {
