@@ -14,7 +14,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-const tasksFilePath = './tasks.json';
+const tasksFilePath = path.join(__dirname, 'tasks.json');
 
 // Ensure tasks.json exists
 if (!fs.existsSync(tasksFilePath)) {
