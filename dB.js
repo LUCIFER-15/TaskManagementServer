@@ -7,7 +7,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
-app.use(cors());
+const corsOptions = {
+  origin: 'https://task-management-new-dusky.vercel.app', // Vercel frontend URL
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 
 const tasksFilePath = './tasks.json';
 
