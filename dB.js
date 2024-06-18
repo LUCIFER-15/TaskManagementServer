@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 const corsOptions = {
-  origin: 'https://task-management-mh5dp0uuj-lucifer-15s-projects.vercel.app', // Vercel frontend URL
+  origin: 'https://crud-omega-henna.vercel.app', // Vercel frontend URL
   optionsSuccessStatus: 200,
 };
 
