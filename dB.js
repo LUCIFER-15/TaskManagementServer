@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 const corsOptions = {
-  origin: 'https://taskmanagementserver-dn49.onrender.com', // Vercel frontend URL
+  origin: 'https://task-management-new-dusky.vercel.app', // Vercel frontend URL
   optionsSuccessStatus: 200,
 };
 
