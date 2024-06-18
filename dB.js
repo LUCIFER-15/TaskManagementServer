@@ -86,4 +86,6 @@ app.delete('/tasks/:id', (req, res) => {
   });
 });
 
-module.exports = app;
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
